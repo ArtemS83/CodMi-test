@@ -9,15 +9,22 @@ const fetchPosts = () => {
     .catch(error => console.log('error', error));
 };
 
-const deletePosts = id => {
+const deletePost = id => {
   axios.delete(`/posts/${id}`).catch(error => console.log('error', error));
 };
 
-const addPosts = newPost => {
+const addPost = newPost => {
   return axios
     .post('/posts', newPost)
     .then(({ data }) => data)
     .catch(error => console.log('error', error));
 };
 
-export default { fetchPosts, deletePosts, addPosts };
+const updatePost = (id, body) => {
+  return axios
+    .patch(`/posts/${id}`, body)
+    .then(({ data }) => data)
+    .catch(error => console.log('error', error));
+};
+
+export default { fetchPosts, deletePost, addPost, updatePost };

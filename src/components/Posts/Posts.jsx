@@ -1,7 +1,7 @@
 import PostItem from '../PostItem';
 import style from './Posts.module.scss';
 
-const Posts = ({ posts, onDelete }) => {
+const Posts = ({ posts, onDelete, onUpdate }) => {
   return (
     <ul className={style.list}>
       {posts.map(({ id, title, body }) => (
@@ -11,6 +11,7 @@ const Posts = ({ posts, onDelete }) => {
           title={title}
           body={body}
           onDelete={onDelete}
+          onUpdate={onUpdate}
         />
       ))}
     </ul>

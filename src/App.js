@@ -12,12 +12,19 @@ const App = () => {
 
   const handleSubmitAddForm = post => {
     setPosts(prevState => [post, ...prevState]);
-    apiServices.addPosts(post);
+    apiServices.addPost(post);
   };
 
   const handleDeletePost = id => {
     setPosts(prevState => prevState.filter(post => post.id !== id));
-    apiServices.deletePosts(id);
+    apiServices.deletePost(id);
+  };
+
+  const handleUpdatePost = (id, body) => {
+    setPosts(
+      prevState => prevState.map(post => (post.id === id ? { ...body } : post)),
+      apiServices.updatePost(id, body),
+    );
   };
 
   return (
@@ -26,7 +33,11 @@ const App = () => {
         <>
           <h1>Posts</h1>
           <FormAddPost onSubmitAddForm={handleSubmitAddForm} />
-          <Posts posts={posts} onDelete={handleDeletePost} />
+          <Posts
+            posts={posts}
+            onDelete={handleDeletePost}
+            onUpdate={handleUpdatePost}
+          />
         </>
       ) : (
         <h1>No Posts</h1>
