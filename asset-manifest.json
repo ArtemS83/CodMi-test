@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/CodMi-test/static/css/main.56fdbd26.chunk.css",
+    "main.js": "/CodMi-test/static/js/main.8294ee13.chunk.js",
+    "main.js.map": "/CodMi-test/static/js/main.8294ee13.chunk.js.map",
+    "runtime-main.js": "/CodMi-test/static/js/runtime-main.98e846b4.js",
+    "runtime-main.js.map": "/CodMi-test/static/js/runtime-main.98e846b4.js.map",
+    "static/css/2.de71bbd8.chunk.css": "/CodMi-test/static/css/2.de71bbd8.chunk.css",
+    "static/js/2.7b8e6230.chunk.js": "/CodMi-test/static/js/2.7b8e6230.chunk.js",
+    "static/js/2.7b8e6230.chunk.js.map": "/CodMi-test/static/js/2.7b8e6230.chunk.js.map",
+    "index.html": "/CodMi-test/index.html",
+    "static/css/2.de71bbd8.chunk.css.map": "/CodMi-test/static/css/2.de71bbd8.chunk.css.map",
+    "static/css/main.56fdbd26.chunk.css.map": "/CodMi-test/static/css/main.56fdbd26.chunk.css.map",
+    "static/js/2.7b8e6230.chunk.js.LICENSE.txt": "/CodMi-test/static/js/2.7b8e6230.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.98e846b4.js",
+    "static/css/2.de71bbd8.chunk.css",
+    "static/js/2.7b8e6230.chunk.js",
+    "static/css/main.56fdbd26.chunk.css",
+    "static/js/main.8294ee13.chunk.js"
+  ]
+}
