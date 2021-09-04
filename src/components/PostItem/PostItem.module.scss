@@ -1,0 +1,22 @@
+.item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgb(22, 21, 22);
+}
+.text {
+  margin-top: 5px;
+  text-align: left;
+  color: coral;
+}
+div {
+  margin-bottom: 5px;
+}
+.button {
+  margin-left: 10px;
+}
+
+.button:hover {
+  background-color: cyan;
+  cursor: pointer;
+}
